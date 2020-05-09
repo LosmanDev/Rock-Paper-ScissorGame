@@ -15,22 +15,27 @@
     />
     <title>Rock Paper Scissor Game</title>
   </head>
+
   <body>
     <div class="container">
       <div class="row">
-        <h1 class="text-center col-sm-12 mb-4">
+        <h1 id="game" class="text-center col-sm-12 mb-4">
           Rock <i class="fas fa-hand-rock"></i> Paper
           <i class="fas fa-hand-paper"></i> Scissors
           <i class="fas fa-hand-scissors"></i> Game
         </h1>
-        <h2 class="col-sm-4 text-center">Player Score <span>0</span></h2>
+        <h2 class="col-sm-4 text-center">
+          Player Score <span id="player-score">0</span>
+        </h2>
         <button
           id="button-play"
           class="col-sm-4 align-content-center btn btn-outline-dark"
         >
           Click to Play
         </button>
-        <h2 class="col-sm-4 text-center">Bot Score <span>0</span></h2>
+        <h2 class="col-sm-4 text-center">
+          Bot Score <span id="bot-score">0</span>
+        </h2>
       </div>
       <div class="row">
         <h2 class="text-center col-sm-6" id="player-hand"></h2>
