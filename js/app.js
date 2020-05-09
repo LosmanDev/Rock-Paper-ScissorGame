@@ -24,7 +24,9 @@ const gameKeeper = () => {
     game.innerHTML = "GAME OVER !! YOU WIN";
     player = 0;
     bot = 0;
-    button_play.innerHTML = "Reload";
+    button_play.innerHTML = "Reload Game";
+    button_play.classList.remove("btn", "btn-outline-dark");
+    button_play.classList.add("btn", "btn-danger");
     button_play.addEventListener("click", () => {
       location.reload();
     });
@@ -35,6 +37,8 @@ const gameKeeper = () => {
     player = 0;
     bot = 0;
     button_play.innerHTML = "Reload Game";
+    button_play.classList.remove("btn", "btn-outline-dark");
+    button_play.classList.add("btn", "btn-danger");
     button_play.addEventListener("click", () => {
       location.reload();
     });
